@@ -2,7 +2,7 @@
   "development": {
     "username": "neondb_owner",
     "password": "npg_geH84kYSoIUc",
-    "database": "neondb",
+    "database": "8byte_prod",
     "host": "ep-solitary-sunset-aes9r20i-pooler.c-2.us-east-2.aws.neon.tech",
     "dialect": "postgres",
     "dialectOptions": {
@@ -14,7 +14,7 @@
   "test": {
     "username": "neondb_owner",
     "password": "npg_geH84kYSoIUc",
-    "database": "neondb",
+    "database": "8byte_prod",
     "host": "ep-solitary-sunset-aes9r20i-pooler.c-2.us-east-2.aws.neon.tech",
     "dialect": "postgres",
     "dialectOptions": {
@@ -26,7 +26,7 @@
   "production": {
     "username": "neondb_owner",
     "password": "npg_geH84kYSoIUc",
-    "database": "neondb",
+    "database": "8byte_prod",
     "host": "ep-solitary-sunset-aes9r20i-pooler.c-2.us-east-2.aws.neon.tech",
     "dialect": "postgres",
     "dialectOptions": {

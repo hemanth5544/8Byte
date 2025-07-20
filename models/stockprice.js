@@ -3,7 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const StockPrice = sequelize.define('StockPrice', {
     stockId: {
-      type: DataTypes.UUID,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'Stocks',

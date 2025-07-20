@@ -3,7 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Holding = sequelize.define('Holding', {
     userId: {
-      type: DataTypes.UUID,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'Users', // Use table name
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     stockId: {
-      type: DataTypes.UUID,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'Stocks',
