@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       sectorId: {
-        type: Sequelize.UUID
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

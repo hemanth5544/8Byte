@@ -16,6 +16,24 @@ app.get('/', (req, res) => {
 const holdingRoutes = require('./routes/holdings');
 app.use('/holdings', holdingRoutes);
 
+
+
+const yahooFinance = require('yahoo-finance2').default;
+
+async function getStockData(ticker) {
+  const quote = await yahooFinance.quoteSummary(ticker, { modules: ['summaryDetail', 'defaultKeyStatistics', 'financialData', 'earnings'] });
+
+  const currentPrice = quote.financialData.currentPrice;
+  const peRatio = quote.defaultKeyStatistics.trailingPE;
+  const earnings = quote.earnings.earningsChart.quarterly;
+
+  console.log("Current Price:", currentPrice);
+  console.log("P/E Ratio:", peRatio);
+  console.log("Earnings (Quarterly):", earnings);
+}
+
+getStockData('AAPL');
+
 // Test DB connection
 sequelize.authenticate()
   .then(() => {

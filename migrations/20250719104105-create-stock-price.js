@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       stockId: {
-        type: Sequelize.UUID
+        type: Sequelize.INTEGER
       },
       cmp: {
         type: Sequelize.FLOAT
